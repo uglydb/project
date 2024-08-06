@@ -1,0 +1,15 @@
+C:\Users\berdenov_a\source\repos\Test\Test.Service\bin\Debug\net8.0\Test.Service.deps.json
+C:\Users\berdenov_a\source\repos\Test\Test.Service\bin\Debug\net8.0\Test.Service.dll
+C:\Users\berdenov_a\source\repos\Test\Test.Service\bin\Debug\net8.0\Test.Service.pdb
+C:\Users\berdenov_a\source\repos\Test\Test.Service\bin\Debug\net8.0\Test.Data.dll
+C:\Users\berdenov_a\source\repos\Test\Test.Service\bin\Debug\net8.0\Test.Data.pdb
+C:\Users\berdenov_a\source\repos\Test\Test.Service\obj\Debug\net8.0\Test.Service.csproj.AssemblyReference.cache
+C:\Users\berdenov_a\source\repos\Test\Test.Service\obj\Debug\net8.0\Test.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berdenov_a\source\repos\Test\Test.Service\obj\Debug\net8.0\Test.Service.AssemblyInfoInputs.cache
+C:\Users\berdenov_a\source\repos\Test\Test.Service\obj\Debug\net8.0\Test.Service.AssemblyInfo.cs
+C:\Users\berdenov_a\source\repos\Test\Test.Service\obj\Debug\net8.0\Test.Service.csproj.CoreCompileInputs.cache
+C:\Users\berdenov_a\source\repos\Test\Test.Service\obj\Debug\net8.0\Test.Ser.B7522DBE.Up2Date
+C:\Users\berdenov_a\source\repos\Test\Test.Service\obj\Debug\net8.0\Test.Service.dll
+C:\Users\berdenov_a\source\repos\Test\Test.Service\obj\Debug\net8.0\refint\Test.Service.dll
+C:\Users\berdenov_a\source\repos\Test\Test.Service\obj\Debug\net8.0\Test.Service.pdb
+C:\Users\berdenov_a\source\repos\Test\Test.Service\obj\Debug\net8.0\ref\Test.Service.dll
