@@ -41,5 +41,13 @@ namespace Test.Api.Controllers
             var response = await _libraryService.GetListBook(data);
             return Ok(response);
         }
+
+        [HttpPost("GetSortedAndFilteredBooks")]
+        public async Task<IActionResult> GetSortedAndFilteredBooks([FromBody] BookSortFilterRequestDTO data)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var response = await _libraryService.GetSortedAndFilteredBooks(data);
+            return Ok(response);
+        }
     }
 }

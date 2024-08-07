@@ -16,6 +16,7 @@ namespace Test.Service.Author
         Task<PaginationResultDTO<AuthorDTO>> GetListAuthor(PaginationRequestDTO data);
         Task<BookSortByResultDTO<BookDTO>> GetSortedBooks(BookSortRequestDTO data);
         Task<BookSortByResultDTO<BookDTO>> GetListBook(BookFilterDTO data);
+        Task<BookSortByResultDTO<BookDTO>> GetSortedAndFilteredBooks(BookSortFilterRequestDTO data);
     }
 
     public class LibraryService : ILibraryService
@@ -113,6 +114,45 @@ namespace Test.Service.Author
                 .ToListAsync();
 
             return new BookSortByResultDTO<BookDTO> { Lists = books };
+        }
+
+
+        public async Task<BookSortByResultDTO<BookDTO>> GetSortedAndFilteredBooks(BookSortFilterRequestDTO data)
+        {
+            var query =  _bookRepository.GetQueryable(x => x.IsDeleted == false && x.Name.Contains(data.Title));
+
+            if (data.Genre.HasValue) 
+            {
+                query = query.Where(x => x.BookGenre == data.Genre);
+            }
+
+            if (!string.IsNullOrEmpty(data.SortBy))
+            {
+                switch (data.SortBy.ToLower())
+                {
+                    case "name":
+                        query = data.SortOrder ? query.OrderBy(b => b.Name) : query.OrderByDescending(b => b.Name);
+                        break;
+                    case "genre":
+                        query = data.SortOrder ? query.OrderBy(b => b.BookGenre) : query.OrderByDescending(b => b.BookGenre);
+                        break;
+                    case "creationdate":
+                        query = data.SortOrder ? query.OrderBy(b => b.CreateDate) : query.OrderByDescending(b => b.CreateDate);
+                        break;
+                    default:
+                        query = data.SortOrder ? query.OrderBy(b => b.Name) : query.OrderByDescending(b => b.Name);
+                        break;
+                }
+            }
+            var books = await query
+                .Select(b => new BookDTO
+                {
+                    Name = b.Name,
+                    Genre = b.BookGenre,
+                    CreationDate = b.CreateDate
+                })
+                .ToListAsync();
+            return new BookSortByResultDTO<BookDTO> { Lists = books};
         }
     }
 }
