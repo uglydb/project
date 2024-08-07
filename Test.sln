@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Api", "Test\Test.Api.csproj", "{54CA5C97-663A-4B25-8588-058997620267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Service", "Test.Service\Test.Service.csproj", "{AFF1ECBD-9538-4637-A78D-1B15F8560712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Data", "Test.Data\Test.Data.csproj", "{F629536C-21A2-421A-A7AD-263F864B31F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54CA5C97-663A-4B25-8588-058997620267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CA5C97-663A-4B25-8588-058997620267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CA5C97-663A-4B25-8588-058997620267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CA5C97-663A-4B25-8588-058997620267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFF1ECBD-9538-4637-A78D-1B15F8560712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF1ECBD-9538-4637-A78D-1B15F8560712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF1ECBD-9538-4637-A78D-1B15F8560712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF1ECBD-9538-4637-A78D-1B15F8560712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F629536C-21A2-421A-A7AD-263F864B31F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F629536C-21A2-421A-A7AD-263F864B31F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F629536C-21A2-421A-A7AD-263F864B31F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F629536C-21A2-421A-A7AD-263F864B31F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3BA800D-9B56-4B4D-8391-3CF43F179945}
+	EndGlobalSection
+EndGlobal
